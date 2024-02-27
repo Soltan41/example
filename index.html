@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <button id="btn">
+<!-- 
+<form  name="name" onsubmit="return validateForm()" method="post">
+  <input type="text" name="fname">
+  <input type="submit" name="submit" >
+</form> -->
+
+
+
+  <!-- <button id="btn">
 click
-  </button>
+  </button> -->
 
 <br>
 <br>
 <br>
-
+<!-- 
   <form action="">
 
 
@@ -22,6 +30,24 @@ click
 
       <input type="clic me">
     </div>
+  </form> -->
+
+
+
+  <div id="error"></div>
+  <form id="form" action="/" method="GET">
+<div>
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text">
+</div>
+
+
+
+<div>
+  <label for="password">pasword</label>
+  <input id="password" name="password" type="password">
+</div>
+<button type="submit"> submit</button>
   </form>
 
 <script src="./app.js">
