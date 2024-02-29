@@ -1,10 +1,4 @@
-// function cutveyatek(a) {
-//     if (a%2==0) {
-//          console.log('cutreqemdi');
-//     }
-//     else{
-//         console.log('tekreqemdi');
-//     }
+
 
 // }
 // cutveyatek(8)
@@ -239,35 +233,97 @@
 //   }
 //   validateForm()
 
-const name = document.getElementById('name')
-const password = document.getElementById('password')
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
+// const name = document.getElementById('name')
+// const password = document.getElementById('password')
+// const form = document.getElementById('form')
+// const errorElement = document.getElementById('error')
 
- form.addEventListener('submit', (e) => {
-  let messages = []
-  if (name.value === ''|| name.value == null){
-    messages.push( 'Name is required')
+//  form.addEventListener('submit', (e) => {
+//   let messages = []
+//   if (name.value === ''|| name.value == null){
+//     messages.push( 'Name is required')
+//   }
+
+//   if (password.value.length <= 6){
+//     messages.push('passowerd must be longer than 6 xarekter')
+//    }
+//   if(messages.length > 0){
+//     e.preventDefault()
+//     errorElement.innerText = messages.join(',')
+//   }
+
+
+//  })
+
+function cutveyatek(a) {
+  if (a%2==0) {
+       console.log('cutreqemdi');
+  }
+  else{
+      console.log('tekreqemdi');
   }
 
-  if (password.value.length <= 6){
-    messages.push('passowerd must be longer than 6 xarekter')
-   }
-  if(messages.length > 0){
-    e.preventDefault()
-    errorElement.innerText = messages.join(',')
-  }
+
+}
+
+cutveyatek(6)
+
+// function polindrom(word) {
+//   const reverseWord=word.split('').reverse().join()
+// return reverseWord
+// }
 
 
- })
-
-
-
-
-
-
+// const result=polindrom('soltan')
+// console.log(result);
 
 
 
+// function polindrom(word) {
+//   const reverseWord=word.split(' ').reverse().join()
+//  if(word===reverseWord){
+//   return true
+//  }
+//  else{
+//   return false
+//  }
+// }
 
 
+// const result=polindrom('amma')
+// console.log(result);
+
+
+
+// function polindrom(word) {
+//   const reverseWord=word.split("").reverse().join("")
+//  return word===reverseWord ? true : false
+ 
+// }
+
+
+// const result=polindrom("amma")
+// console.log(result);
+
+
+// function name(params) {
+  
+// }
+
+
+// function myCalculator(num1, num2) {
+//   let sum = num1 + num2;
+//   return sum;
+// }
+
+// let result = myCalculator(5, 5);
+// myDisplayer(result);
+
+
+function eks(soz) {
+  const reverseWord=soz.split('').reverse().join('')
+  return reverseWord
+  
+}
+const result=eks("salam")
+console.log(result);
