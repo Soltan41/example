@@ -1,51 +1,9 @@
 
 
-// Birinci tapsiriq
-for (let i = 1; i <= 4; i++) {
-  for (let j = 1; j <=i; j++) {
-   document.write(i+"")
-    
-  }
- document.write("<br>")
-}
 
 
 
 
-// ikinci tapsiriq
-for (let i = 1; i <= 4; i++) {
-  for (let j = 1; j <=i; j++) {
-   document.write(j+"")
-    
-  }
- document.write("<br>")
-}
-
-
-// ucuncu tapsiriq
-let count=1
-
-for (let i = 1; i <= 5; i++) {
-  for (let j = 1; j <=i; j++) {
-   document.write(count+"")
-    count++
-  }
- document.write("<br>")
-}
-
-// dorduncu tapsiriq
-
-for (let i = 1; i <= 4; i++) {
-  for (let j = 4; j >=i; j--) {
-   document.write("&nbsp;");
-    
-  }
-  for (let k = 1; k <=i; k++) {
-    document.write(i + " ");
-     
-   }
- document.write("<br>");
-}
 
 
 
@@ -84,7 +42,8 @@ console.log(sentenceLength(cumle5));
 
 
 //Yeddinci tapsiriq
-const i='Bu melumatdi'
+function k() {
+  const i='Bu melumatdi'
 const k ='Bu melumatdir'
 
 if (i===k) {
@@ -95,6 +54,10 @@ if (i===k) {
 else{
   console.log("false");
 }
+  
+}
+
+k()
 
 
 function printPattern(rows) {
@@ -120,3 +83,27 @@ for (let i = 1; i <= 4; i++) {
   }
  console.log(result)
   }
+
+
+function primaidPattern(row2) {
+for (let i = 1; i <= row2; i++) {
+  let patterin =" ";
+
+  for (let j = 1; j <= row2-i; j++) {
+    
+     patterin += " ";
+  }
+  
+  for (let k= 1; k<=i; k++) {
+    patterin += i+" "
+    
+  }
+
+  console.log(patterin);
+}
+
+  
+}
+ let row2=4
+
+primaidPattern(row2)
